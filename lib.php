@@ -494,11 +494,12 @@ function attendance_print_settings_tabs($selected = 'settings') {
             get_string('absenteereport', 'attendance'), get_string('absenteereport', 'attendance'), false);
     }
 
-    $tabs[] = new tabobject('resetcalendar', $CFG->wwwroot.'/mod/attendance/resetcalendar.php',
-        get_string('resetcalendar', 'attendance'), get_string('resetcalendar', 'attendance'), false);
+    $tabs[] = new tabobject('locations', $CFG->wwwroot.'/mod/attendance/locations.php',
+    get_string('locations', 'attendance'), get_string('locations', 'attendance'), false);
 
-    $tabs[] = new tabobject('importsessions', $CFG->wwwroot . '/mod/attendance/import/sessions.php',
-        get_string('importsessions', 'attendance'), get_string('importsessions', 'attendance'), false);
+    
+
+
 
     ob_start();
     print_tabs(array($tabs), $selected);
