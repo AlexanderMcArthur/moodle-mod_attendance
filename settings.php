@@ -43,7 +43,6 @@ if ($ADMIN->fulltree) {
          100 => 100,
          250 => 250,
          500 => 500,
-         1000 => 1000,
     );
 
     $settings->add(new admin_setting_configselect('attendance/resultsperpage',
